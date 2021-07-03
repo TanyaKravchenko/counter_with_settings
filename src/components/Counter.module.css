@@ -1,0 +1,15 @@
+.counterWrapper {
+    display: flex;
+}
+
+.scoreboardWrapper {
+    background-color: #61dafb;
+    height: 200px;
+    width: 150px;
+}
+
+.scoreboardSettingsWrapper {
+    background-color: mediumslateblue;
+    height: 200px;
+    width: 150px;
+}

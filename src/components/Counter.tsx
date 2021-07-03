@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import classes from './Counter.module.css'
 import {Scoreboard} from './Scoreboard';
 import {ScoreboardSettings} from './ScoreboardSettings';
 
@@ -9,11 +10,11 @@ function Counter() {
     }
 
     return (
-        <div className="App">
-            <div>
+        <div className={classes.counterWrapper}>
+            <div className={classes.scoreboardWrapper}>
                 <Scoreboard addCount={addCount} count={count}/>
             </div>
-            <div>
+            <div className={classes.scoreboardSettingsWrapper}>
                 <ScoreboardSettings />
             </div>
         </div>
