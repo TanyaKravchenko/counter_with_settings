@@ -1,23 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ScoreboardButtons} from './ScoreboardButtons';
 
-type ScoreboardType = {
-    addCount: () => void
-    count: number
-    //maxValue: number
-}
 
-export function Scoreboard(props: ScoreboardType) {
+export const Scoreboard = () => {
+    let [count, setCount] = useState(0);
+
+    let maxValue = 5;
+
+    function addCount() {
+        if (count < maxValue) {
+            return setCount(count + 1);
+        }
+    }
+
+    let resetCount = () => {
+        setCount(0);
+    }
+
     return (
         <div>
-            <div>
-                {props.count}
+            <div className={count === maxValue ? "red" : ""}>
+                {count}
             </div>
             <div>
-                <ScoreboardButtons addCount={props.addCount}/>
+                <ScoreboardButtons
+                    counter={addCount}
+                    title={'inc'}
+                />
             </div>
             <div>
-                <ScoreboardButtons addCount={props.addCount}/>
+                <ScoreboardButtons
+                    counter={resetCount}
+                    title={'reset'}
+                />
             </div>
         </div>
     )
