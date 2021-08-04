@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {ScoreboardButtons} from './ScoreboardButtons';
 
 type ScoreboardType = {
@@ -7,13 +7,10 @@ type ScoreboardType = {
 }
 
 export function ScoreboardSettings(props: ScoreboardType) {
-    let [count, setCount] = useState(0);
 
-    let maxValue = 5;
 
     function setCount() {
-
-        }
+        alert('hi')
     }
 
     return (
