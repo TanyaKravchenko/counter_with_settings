@@ -19,11 +19,13 @@ function Counter() {
     }
     return (
         <div className={classes.counterWrapper}>
+            <div className={classes.counterContainer}>
             <div className={classes.scoreboardSettingsWrapper}>
                 <ScoreboardSettings count={count} maxValue={maxValue}/>
             </div>
             <div className={classes.scoreboardWrapper}>
                 <Scoreboard />
+            </div>
             </div>
         </div>
     );

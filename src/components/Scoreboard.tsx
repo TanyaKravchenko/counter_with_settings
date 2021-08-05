@@ -18,7 +18,7 @@ export const Scoreboard = () => {
     }
 
     return (
-        <div>
+        <div className={count === maxValue ? "red" : ""}>
             <div className={count === maxValue ? "red" : ""}>
                 {count}
             </div>

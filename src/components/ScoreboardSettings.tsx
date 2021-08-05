@@ -6,7 +6,7 @@ type ScoreboardType = {
     maxValue: number
 }
 
-export function ScoreboardSettings(props: ScoreboardType) {
+export const ScoreboardSettings: React.FC<ScoreboardType> = (props) => {
 
 
     function setCount() {
@@ -15,11 +15,13 @@ export function ScoreboardSettings(props: ScoreboardType) {
 
     return (
         <div>
-            <div className={props.count === props.maxValue ? 'red' : ''}>
-                {props.count}
+            <div>
+                <span>max value: </span>
+                <input/>
             </div>
-            <div className={props.count === props.maxValue ? 'red' : ''}>
-                {props.count}
+            <div>
+                <span>start value: </span>
+                <input/>
             </div>
             <div>
                 <ScoreboardButtons
