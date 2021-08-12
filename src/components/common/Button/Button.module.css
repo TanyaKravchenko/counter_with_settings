@@ -1,0 +1,26 @@
+.buttonWrapper {
+    display: flex;
+
+    margin: 10px;
+}
+
+.button {
+    font-size: 22px;
+
+    width: 80px;
+    height: 50px;
+
+    cursor: pointer;
+
+    color: #efeaea;
+    border: none;
+    outline: none;
+    background: rgba(144, 40, 170, 0.5);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.disabled {
+    background: rgba(144, 40, 170, 0.24);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
