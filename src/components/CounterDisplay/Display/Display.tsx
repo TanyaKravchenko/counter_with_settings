@@ -16,14 +16,12 @@ export const Display: React.FC<DisplayPropsType> = ({maxNum, currentValue, helpM
         ? `${s.end_number} ${s.simple_number}`
         : s.simple_number
     return (
-        <div className={s.displayWrapper}>
-            <div className={s.counter_wrapper}>
-                {helpMessage.length !== 0
-                    ? <p className={displayMessageClass}>{helpMessage}</p>
-                    : <span className={spanClass}>
+        <div className={s.displayContainer}>
+            {helpMessage.length !== 0
+                ? <p className={displayMessageClass}>{helpMessage}</p>
+                : <span className={spanClass}>
                     {currentValue}</span>
-                }
-            </div>
+            }
         </div>
     )
 

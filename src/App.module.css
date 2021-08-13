@@ -1,0 +1,24 @@
+.app {
+    display: flex;
+    justify-content: center;
+    margin: 90px auto 0;
+}
+
+.CounterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.CounterDisplayWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px solid MediumTurquoise;
+    height: 250px;
+    width: 400px;
+    background-color: PowderBlue;
+    border-radius: 3px;
+    box-shadow: 0 0 10px black;
+}

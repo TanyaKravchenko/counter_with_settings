@@ -1,9 +1,9 @@
 import React, {useCallback, useEffect } from 'react';
 import s from './CounterSettings.module.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { rootState } from '../Redux/store';
 import { InitialStateType } from '../Redux/counter-reduser';
-import { actions } from '../Redux/actions';
+import { actions, useDispatch } from '../Redux/actions';
 import { Button } from '../common/Button/Button';
 import {SettingsDisplay} from './SettingsDisplay/SettingsDisplay';
 

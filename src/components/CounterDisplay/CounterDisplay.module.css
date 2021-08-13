@@ -1,0 +1,22 @@
+.counterDisplayWrapper {
+
+}
+
+.counterDisplayContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.displayWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

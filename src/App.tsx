@@ -1,13 +1,19 @@
 import React from 'react';
-import './App.css';
+import s from './App.module.css';
 import {CounterDisplay} from './components/CounterDisplay/CounterDisplay';
 import {CounterSettings} from './components/CounterSettings/CounterSettings';
 
 function App() {
     return (
-        <div className="App">
-            <CounterDisplay/>
-            <CounterSettings/>
+        <div className={s.app}>
+            <div className={s.CounterContainer}>
+                <div className={s.CounterSettingsWrapper}>
+                    <CounterSettings/>
+                </div>
+                <div className={s.CounterDisplayWrapper}>
+                    <CounterDisplay/>
+                </div>
+            </div>
         </div>
     );
 }
