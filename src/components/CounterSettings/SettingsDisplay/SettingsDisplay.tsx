@@ -12,7 +12,7 @@ type SettingsDisplayPropsType = {
 
 export const SettingsDisplay: React.FC<SettingsDisplayPropsType> = ({maxNum, minNum,helpMessage, changeMaxValue, changeMinValue}) => {
     return (
-        <div className={s.counterSettingsWrapper}>
+        <div className={s.CounterDisplayWrapper}>
             <div className={s.counter_wrapper}>
                 <Input value={maxNum}
                        callback={changeMaxValue}

@@ -11,7 +11,8 @@
     width: 900px;
 }
 
-.CounterDisplayWrapper {
+.CounterDisplayWrapper,
+.CounterSettingsWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
